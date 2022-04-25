@@ -15,7 +15,7 @@ function Intro(props) {
                         </div>
                     </div>
                     <p className='i-desc'>
-                            [ Personal Brand Statement / objective ]
+                        An adaptable professional with a background in supply chain and Logistics looking to further develop and focus on his skills in software engineering. 
                     </p>
                 </div>
                 <svg

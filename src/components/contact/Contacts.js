@@ -1,6 +1,10 @@
 import React, { useRef, useState } from 'react';
 import "./contact.css"
 import emailjs from "emailjs-com";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faPhone} from '@fortawesome/free-solid-svg-icons';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {faMapPin} from '@fortawesome/free-solid-svg-icons';
 
 function Contacts(props) {
     const formRef = useRef()
@@ -28,25 +32,16 @@ function Contacts(props) {
                     <h1 className='c-title'>Contact Me</h1>
                     <div className='c-info'>
                         <div className="c-info-item">
-                            <img 
-                                src="" 
-                                alt=""
-                                className='c-icon' />
-                                562 382 0734
+                            <FontAwesomeIcon icon={faPhone}/>&nbsp;
+                            562 382 0734
                         </div>
                         <div className="c-info-item">
-                            <img 
-                                src="" 
-                                alt=""
-                                className='c-icon' />
-                                Jfluna1996@gmail.com
+                            <FontAwesomeIcon icon={faEnvelope}/>&nbsp;
+                            Jfluna1996@gmail.com
                         </div>
                         <div className="c-info-item">
-                            <img 
-                                src="" 
-                                alt=""
-                                className='c-icon' />
-                                Huntington Park, CA
+                            <FontAwesomeIcon icon={faMapPin}/>&nbsp;
+                            Huntington Park, CA
                         </div>
                     </div>
                 <div className='c-right'>
