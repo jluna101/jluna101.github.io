@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import "./contact.css"
-import { useRef } from 'react';
+import emailjs from "emailjs-com";
 
 function Contacts(props) {
     const formRef = useRef()
+    const [done, setDone] = useState(false)
     const handleSubmit = (e) => {
         e.preventDefault();
+        emailjs
+            .sendForm(
+                'service_cwozpkb', 
+                'template_fzzj0rn', 
+                formRef.current, 'M7s3qMX_DWZ2Hf046')
+            .then((result) => {
+            console.log(result.text);
+            setDone(true)
+            }, (error) => {
+            console.log(error.text);
+        });
     }
 
     return (
@@ -13,7 +25,7 @@ function Contacts(props) {
             <div className="c-bg"></div>    
             <div className='c-wrapper'>
                 <div className='c-left'></div>
-                    <h1 className='c-title'>Feel free to reach out</h1>
+                    <h1 className='c-title'>Contact Me</h1>
                     <div className='c-info'>
                         <div className="c-info-item">
                             <img 
@@ -39,7 +51,7 @@ function Contacts(props) {
                     </div>
                 <div className='c-right'>
                     <p className='c-desc'>
-                        This is a description
+                        Feel Free to reach out via phone or email!
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
                         <input type="text" placeholder="Name" name="user_name" />
@@ -47,6 +59,7 @@ function Contacts(props) {
                         <input type="text" placeholder="Email" name="user_email" />
                         <textarea rows="5" placeholder='Message' name='message'/>
                         <button>Submit</button>
+                        {done && " Thank you..."}
                     </form>
                 </div>
             </div>
