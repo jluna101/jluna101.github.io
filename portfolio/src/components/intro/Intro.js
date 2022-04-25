@@ -15,7 +15,7 @@ function Intro(props) {
                         </div>
                     </div>
                     <p className='i-desc'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cumque optio aperiam magni, repellendus ducimus fugiat dolor fuga iusto aliquid eaque vitae pariatur aut ut possimus, qui doloremque necessitatibus id!
+                            [ Personal Brand Statement / objective ]
                     </p>
                 </div>
                 <svg

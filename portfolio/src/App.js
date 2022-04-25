@@ -1,6 +1,9 @@
 import './App.css';
 import About from './components/about/About';
 import Intro from './components/intro/Intro';
+import Project from './components/project/Project';
+import ProjectList from './components/projectList/ProjectList';
+
 
 
 function App() {
@@ -8,6 +11,7 @@ function App() {
     <div>
       <Intro/>
       <About/>
+      <ProjectList/>
     </div>
   );
 }
