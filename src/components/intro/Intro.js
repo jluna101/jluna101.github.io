@@ -15,7 +15,8 @@ function Intro(props) {
                         </div>
                     </div>
                     <p className='i-desc'>
-                        An adaptable professional with a background in supply chain and Logistics looking to further develop and focus on his skills in software engineering. 
+                    An adaptable detail-oriented professional with three years of experience in a high-pressure logistics supervisory role and previously four years performing instructional design for professors at CSULB. Currently seeking to further develop and focus my skills in UI/UX design. 
+
                     </p>
                 </div>
                 <svg
@@ -78,7 +79,9 @@ function Intro(props) {
 
             <div className='i-right'>
                 <div className="i-bg"></div>
-                <img src="https://qph.fs.quoracdn.net/main-qimg-134e3bf89fff27bf56bdbd04e7dbaedf.webp" alt="Photo of Jesse Luna" className='i-img' />
+                <div id='radius'>
+                <img src='https://user-images.githubusercontent.com/97872070/165405957-bd9631a2-5726-4d98-93d8-094f093c6701.jpeg' alt="Jesse Luna" className='i-img' id='radius' />
+                </div>
             </div>
         </div>
     );

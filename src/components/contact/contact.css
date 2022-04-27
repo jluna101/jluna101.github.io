@@ -69,3 +69,18 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+.c-sent {
+    color: green;
+    margin: 10px 0px;
+    animation: fadeOut 5s;
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+       opacity: 0;
+    }
+  }

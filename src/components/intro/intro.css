@@ -12,6 +12,7 @@
 .i-right {
     flex: 1;
     position: relative;
+    border-radius:15px;;
 }
 .i-left-wrapper {
     padding: 50px;
@@ -43,12 +44,12 @@
     50%{
         transform: translateY(-100px);
     }
-    75{
+    /* 75%{
         transform: translateY(-150px);
     }
-    100{
+    100%{
         transform: translateY(-200px);
-    }
+    } */
 }
 .i-title-item {
     height: 50px;

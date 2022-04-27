@@ -19,6 +19,7 @@ function Contacts(props) {
             .then((result) => {
             console.log(result.text);
             setDone(true)
+            e.target.reset()
             }, (error) => {
             console.log(error.text);
         });
@@ -54,7 +55,7 @@ function Contacts(props) {
                         <input type="text" placeholder="Email" name="user_email" />
                         <textarea rows="5" placeholder='Message' name='message'/>
                         <button>Submit</button>
-                        {done && " Thank you..."}
+                        {done && <div className='c-sent'>' Sent! Thank you' </div>}
                     </form>
                 </div>
             </div>
