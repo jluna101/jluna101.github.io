@@ -6,7 +6,7 @@ function Intro(props) {
         <div className='i'>
             <div className='i-left'>
                 <div className='i-left-wrapper'>
-                    <h2 className='i-intro'>Hello, My name is</h2>
+                    <h2 className='i-intro'>Welcome! My name is</h2>
                     <h1 className='i-name'>Jesse Luna</h1>
                     <div className='i-title'>
                         <div className='i-title-wrapper'>
@@ -15,7 +15,7 @@ function Intro(props) {
                         </div>
                     </div>
                     <p className='i-desc'>
-                    An adaptable detail-oriented professional with three years of experience in a high-pressure logistics supervisory role and previously four years performing instructional design for professors at CSULB. Currently seeking to further develop and focus my skills in UI/UX design. 
+                    An adaptable detail-oriented professional with three years of experience in a fast-paced logistics supervisory role and previously four years performing instructional design for professors at CSULB. Currently seeking to further develop and focus my skills in UI/UX design. 
 
                     </p>
                 </div>

@@ -1,7 +1,14 @@
+
+.p-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .p {
-    width: 30%;
-    height: 30vh;
-    margin: 20px 10px;
+    width: 250px;
+    height: 20vh;
+    margin: 20px 10px 0px 10px;
     border: 2px solid rgb(243, 242, 242);
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
@@ -12,8 +19,12 @@
     display: flex;
     align-items: center;
     position: sticky;
-
-
+}
+.p-desc {
+  width: 250px;
+  height: 20vh;
+  text-align: center;
+  overflow: hidden;
 }
 .p-circle {
     width: 6px;
@@ -29,3 +40,10 @@
 .p:hover .p-img{
     transform: translateY(-100%);
 }
+
+@media screen and (max-width: 480px) {
+    .p {
+      width: 40%;
+      height: 15vh;
+    }
+  }

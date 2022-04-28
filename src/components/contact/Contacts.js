@@ -29,7 +29,7 @@ function Contacts(props) {
         <div className='c'>
             <div className="c-bg"></div>    
             <div className='c-wrapper'>
-                <div className='c-left'></div>
+                <div className='c-left'>
                     <h1 className='c-title'>Contact Me</h1>
                     <div className='c-info'>
                         <div className="c-info-item">
@@ -45,10 +45,11 @@ function Contacts(props) {
                             Huntington Park, CA
                         </div>
                     </div>
+                    </div>
                 <div className='c-right'>
-                    <p className='c-desc'>
+                    <h2 className='c-desc'>
                         Feel Free to reach out via phone or email!
-                    </p>
+                    </h2>
                     <form ref={formRef} onSubmit={handleSubmit}>
                         <input type="text" placeholder="Name" name="user_name" />
                         <input type="text" placeholder="Subject" name="user_subject" />

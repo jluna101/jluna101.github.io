@@ -17,12 +17,11 @@
 .a-card.bg {
     position: absolute;
     top: 50px;
-    left: 220px;
-    background-color: black;
-    /* position: relative; */
+    right: 220px;
+    background-color: beige;
 }
 .a-card {
-    width: 60%;
+    width: 80%;
     height: 70vh;
     border-radius: 30px;
     position: relative;
@@ -62,4 +61,28 @@
     font-weight: bold;
     color: darkgreen;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:480px) {
+    .a{
+      flex-direction: column;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .a-left {
+      width: 100%;
+    }
+
+    .a-card {
+      height: 30vh;
+    }
+
+    .a-card.bg, .a-award {
+      display: none;
+    }
+
+    .a-right{
+      padding: 20px;
+    }
 }

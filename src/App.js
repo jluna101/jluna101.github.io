@@ -8,6 +8,7 @@ import Contacts from './components/contact/Contacts';
 
 
 function App() {
+  document.title = "Jesse's Portfolio"
   return (
     <div>
       <Intro/>

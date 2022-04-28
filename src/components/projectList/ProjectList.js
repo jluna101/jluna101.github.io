@@ -9,12 +9,12 @@ function ProjectList(props) {
             <div className='pl-texts'>
                 <h1 className='pl-title'> Projects</h1>
                 <p className='pl-desc'>
-                    Below are recent projects 
+                    Take a glance at my projects. If you have any questions feel free to ask! 
                 </p>
             </div>
             <div className="pl-list">
                 {projects.map((item) => (
-                    <Project key={item.id} img={item.img} link={item.link}/>
+                    <Project key={item.id} img={item.img} link={item.link} desc={item.desc} title={item.title}/>
                 ))}
             </div>
         </div>
