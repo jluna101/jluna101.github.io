@@ -1,7 +1,7 @@
 .i{
     display: flex;
     height: 100vh;
-    background-color: white;
+    /* background-color: white; */
 }
 .i-left {
     flex: 1;
@@ -17,7 +17,7 @@
 .i-left-wrapper {
     padding: 50px;
     height: 60%;
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,12 +41,12 @@
     25%{
         transform: translateY(-50px);
     }
-    50%{
+    /* 50%{
         transform: translateY(-100px);
-    }
-    /* 75%{
+    } 
+    75%{
         transform: translateY(-150px);
-    }
+    } 
     100%{
         transform: translateY(-200px);
     } */
@@ -55,8 +55,8 @@
     height: 50px;
     font-size: 30px;
     font-weight: bold;
-    color: burlywood;
-    background-color: white;
+    /* color: burlywood; */
+    /* background-color: white; */
     display: flex;
     align-items: center;
 }
@@ -85,6 +85,7 @@
 @media screen and (max-width: 480px) {
     .i {
       flex-direction: column;
+      margin-top: 40px;
     }
   
     .i-left-wrapper {

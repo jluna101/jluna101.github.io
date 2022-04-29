@@ -1,10 +1,14 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import "./contact.css"
 import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPhone} from '@fortawesome/free-solid-svg-icons';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faMapPin} from '@fortawesome/free-solid-svg-icons';
+import { ThemeContext } from '../../context.js';
+import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
+
+
 
 function Contacts(props) {
     const formRef = useRef()
@@ -24,6 +28,8 @@ function Contacts(props) {
             console.log(error.text);
         });
     }
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
 
     return (
         <div className='c'>
@@ -37,6 +43,10 @@ function Contacts(props) {
                             562 382 0734
                         </div>
                         <div className="c-info-item">
+                            <FontAwesomeIcon icon={faLinkedin}/>&nbsp;
+                             <a href="http://Linkedin.com/in/jesse-fernando-luna/" target="_blank" rel="noreferrer">My Linkedin</a>
+                        </div>
+                        <div className="c-info-item">
                             <FontAwesomeIcon icon={faEnvelope}/>&nbsp;
                             Jfluna1996@gmail.com
                         </div>
@@ -48,13 +58,13 @@ function Contacts(props) {
                     </div>
                 <div className='c-right'>
                     <h2 className='c-desc'>
-                        Feel Free to reach out via phone or email!
+                        Below is how you can reach me
                     </h2>
                     <form ref={formRef} onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Name" name="user_name" />
-                        <input type="text" placeholder="Subject" name="user_subject" />
-                        <input type="text" placeholder="Email" name="user_email" />
-                        <textarea rows="5" placeholder='Message' name='message'/>
+                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
+                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
+                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
+                        <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder='Message' name='message'/>
                         <button>Submit</button>
                         {done && <div className='c-sent'>' Sent! Thank you' </div>}
                     </form>

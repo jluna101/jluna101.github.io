@@ -7,7 +7,7 @@ function Intro(props) {
             <div className='i-left'>
                 <div className='i-left-wrapper'>
                     <h2 className='i-intro'>Welcome! My name is</h2>
-                    <h1 className='i-name'>Jesse Luna</h1>
+                    <h1 className='i-name'> Jesse</h1>
                     <div className='i-title'>
                         <div className='i-title-wrapper'>
                             <div className='i-title-item'>Software Developer</div>
@@ -15,7 +15,7 @@ function Intro(props) {
                         </div>
                     </div>
                     <p className='i-desc'>
-                    An adaptable detail-oriented professional with three years of experience in a fast-paced logistics supervisory role and previously four years performing instructional design for professors at CSULB. Currently seeking to further develop and focus my skills in UI/UX design. 
+                    I'd describe myself as an adaptable indivisual with three years of experience in a fast-paced logistics supervisory role and before that worked for four years performing instructional design for professors at CSULB. 
 
                     </p>
                 </div>
@@ -79,8 +79,8 @@ function Intro(props) {
 
             <div className='i-right'>
                 <div className="i-bg"></div>
-                <div id='radius'>
-                <img src='https://user-images.githubusercontent.com/97872070/165405957-bd9631a2-5726-4d98-93d8-094f093c6701.jpeg' alt="Jesse Luna" className='i-img' id='radius' />
+                <div>
+                <img src='https://user-images.githubusercontent.com/97872070/165859266-da22866e-3c32-4933-a178-bbfee82f14c0.png' alt="Jesse Luna" className='i-img'/>
                 </div>
             </div>
         </div>
