@@ -11,7 +11,7 @@ import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 
 function Contacts(props) {
-    document.title = "Portfolio | Contacts"
+    document.title = "Portfolio | Contact"
     const formRef = useRef()
     const [done, setDone] = useState(false)
     const handleSubmit = (e) => {
