@@ -1,0 +1,87 @@
+
+.pld-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pld-cont-map {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center
+}
+.pld-texts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.pldd-title{
+    width: 100%;
+}
+.pldd-desc {
+    margin-bottom: 50px;
+    width: 60%;
+}
+.pld {
+    width: 250px;
+    height: 20vh;
+    margin: 20px 10px 0px 10px;
+    border: 2px solid rgb(243, 242, 242);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.p-browser {
+    height: 20px;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+.pld-title {
+width: 250px;
+text-align:justify;
+overflow: hidden;
+margin-bottom: 0px;
+} 
+.pld-desc {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.pld-tag {
+    margin-bottom: 10px;
+    padding: 0px;
+}
+.gh-tag {
+    margin: 0px;
+}
+
+.p-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 3px;
+    background-color: white;
+}
+.pld-img {
+    width: 100%;
+    transition: all 10s ease;
+}
+.pld:hover .pld-img{
+    transform: translateY(-100%);
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+@media screen and (max-width: 480px) {
+    .p {
+    width: 40%;
+    height: 15vh;
+    }
+}

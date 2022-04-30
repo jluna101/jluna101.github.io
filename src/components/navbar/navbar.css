@@ -37,7 +37,7 @@
     display: flex;
     flex: 1;
     flex-direction: row;
-    font-weight: bold;
+    font-weight: 500;
 
 }
 .n-section-right {
@@ -53,6 +53,11 @@
     padding: 0px 80px 0px 50px;
     display: flex;
     height: 47px;
+    align-items: center;
+}
+.n-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (max-width: 480px) {
@@ -60,7 +65,7 @@
         display: flex;
         flex: 1;
         flex-direction: row;
-        font-weight: bold;
+        font-weight: 500;
     
     }
     .n-section-right {

@@ -6,11 +6,12 @@ import {faPhone} from '@fortawesome/free-solid-svg-icons';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faMapPin} from '@fortawesome/free-solid-svg-icons';
 import { ThemeContext } from '../../context.js';
-import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 
 
 function Contacts(props) {
+    document.title = "Portfolio | Contacts"
     const formRef = useRef()
     const [done, setDone] = useState(false)
     const handleSubmit = (e) => {
@@ -42,9 +43,13 @@ function Contacts(props) {
                             <FontAwesomeIcon icon={faPhone}/>&nbsp;
                             562 382 0734
                         </div>
-                        <div className="c-info-item">
+                        <div className="c-info-item" style={{color: darkMode && "white"}}>
                             <FontAwesomeIcon icon={faLinkedin}/>&nbsp;
-                             <a href="http://Linkedin.com/in/jesse-fernando-luna/" target="_blank" rel="noreferrer">My Linkedin</a>
+                             <a href="http://Linkedin.com/in/jesse-fernando-luna/" target="_blank" rel="noreferrer" className='link' style={{color: darkMode && "white"}}>Linkedin</a>
+                        </div>
+                        <div className="c-info-item" style={{color: darkMode && "white"}}>
+                            <FontAwesomeIcon icon={faGithub}/>&nbsp;
+                             <a href="https://github.com/jluna101" target="_blank" rel="noreferrer" className='link' style={{color: darkMode && "white"}}>Github</a>
                         </div>
                         <div className="c-info-item">
                             <FontAwesomeIcon icon={faEnvelope}/>&nbsp;

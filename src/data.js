@@ -4,16 +4,18 @@ export const projects = [
         title: 'urCrypto',
         img: "https://media.git.generalassemb.ly/user/41257/files/c61b9180-c486-11ec-9f7f-6a82738e9736",
         link: "https://urcrypto.netlify.app/",
-        desc: 'urCrypto is..',
-
-
+        desc: "urCrypto is a platform providing real time cryptocurrency financial data and trending business news. Indivisuals are prompted to signup and login to remove the 'paywall' and gain full functionality. Built with ReactJS, Bootstrap, and ChartJS on the frontend. Python and Django on the backend",
+        ghFront:'https://github.com/jluna101/ur-crypto-frontend',
+        ghBack: 'https://github.com/jluna101/ur-crypto-backend',
     },
     {
         id: 2,
         title: 'Pomodoro',
         img: "https://user-images.githubusercontent.com/97872070/165442451-f0a6de0b-2d85-47f1-af1e-c407a763dfa9.png",
         link: "https://pomodoro176.netlify.app/",
-        desc: 'Pom is..',
+        desc: 'This is a Pomodoro App that helps optimize study and break times through the use of Pomodoro intervals. This structured work and break timer helps indivisuals stay on task and increases productivity for longer periods. Pomodoro interval data is accessed in the frontend, and the data gets sent to the backend for statistics and analysis. Built using a MERN stack',
+        ghFront: 'https://github.com/jluna101/Pomodoro-Frontend',
+        ghBack: 'https://github.com/jluna101/Pomodoro-Backend',
 
 
 
@@ -23,7 +25,9 @@ export const projects = [
         title: 'Blockchain Buzz',
         img: "https://media.git.generalassemb.ly/user/41257/files/d7649e00-c486-11ec-8d22-04498d5c658c",
         link: "https://blockchain-buzz.netlify.app/",
-        desc: 'Blockchain Buzz is..',
+        desc: 'Blockchain Buzz is a hub for cryptocurrency financial metrics and trending cryptocurrency news. Built using ReactJS.',
+        ghFront: 'https://github.com/jluna101/Blockchain-Buzz',
+        ghBack: '',
 
 
     },
@@ -32,7 +36,9 @@ export const projects = [
         title: 'Life',
         img: "https://media.git.generalassemb.ly/user/41257/files/ce73cc80-c486-11ec-9836-1d5f0bb0e3be",
         link: "https://jluna101.github.io/Project-Zero---Life-/",
-        desc: 'Life is..',
+        desc: 'Life is a tomagotchi-inspired game in which the player is paramount to Earth continuing life from year 500 million to present day. Built using HTML, CSS, JS, and jQuery.',
+        ghFront: 'https://github.com/jluna101/Project-Zero---Life-',
+        ghBack: '',
 
 
     }

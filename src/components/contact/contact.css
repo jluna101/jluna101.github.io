@@ -76,6 +76,10 @@ button {
     animation: fadeOut 5s;
 
 }
+.link {
+  text-decoration: none;
+  color: inherit;
+}
 
 @keyframes fadeOut {
     from {

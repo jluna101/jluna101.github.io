@@ -7,21 +7,30 @@ import Contacts from './components/contact/Contacts';
 import Navbar from './components/navbar/Navbar';
 import { useContext  } from 'react';
 import { ThemeContext } from './context'; 
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import ProjectListDetails from './components/projectListDetails/ProjectListDetails';
+import Skills from './components/skills/Skills';
 
 
 function App() {
-  document.title = "Jesse's Portfolio"
   const theme = useContext(ThemeContext)
   const darkMode = theme.state.darkMode
   return (
     <div style={{ backgroundColor: darkMode ? "#222" : "white",
     color: darkMode && "white",}}>
       <Navbar/>
-      <Intro/>
-      <About/>
-      <ProjectList/>
-      <Contacts/>
+      <Routes>
+        <Route path='/' element= { 
+          <>
+          <Intro/>
+          <Skills/>
+          <ProjectList/>
+          </> } 
+        />
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contacts/>}/>
+        <Route path='/projects' element={<ProjectListDetails/>}/>
+      </Routes>
     </div>
   );
 }

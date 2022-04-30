@@ -3,23 +3,27 @@ import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMoon, faSun} from '@fortawesome/free-solid-svg-icons';
 import { ThemeContext } from '../../context.js';
+import { Link } from 'react-router-dom';
 
 function Navbar(props) {
     const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
 
     const handleClick = () => {
         theme.dispatch({type:"TOGGLE"})
     }
     return (
         <div>
-            <div className='n-wrapper'>
+            <div className='n-wrapper' style={{backgroundColor: theme.state.darkMode? '#222': 'white'}}>
                     <section className='n-section-left'>
-                        <p>Jesse Luna</p>
+                        <Link className='n-link' to='/' style={{color: theme.state.darkMode? 'white': 'black'}}>
+                            <p>Jesse Luna</p>
+                        </Link>
                     </section>
                     <section className='n-section-right'>
-                        <p>About</p>
-                        <p>Contact</p>
-                        <p>Projects</p>
+                        <Link className='n-link' style={{color: darkMode && "white"}} to='/contact'><p>Contact</p></Link>
+                        <Link className='n-link' style={{color: darkMode && "white"}} to='/projects'><p>Projects</p></Link>
+                        <Link className='n-link' style={{color: darkMode && "white"}} to='/about'><p>About</p></Link>
                     </section>
             </div>
             <div className='t' style={{backgroundColor: theme.state.darkMode? 'white': 'black'}} > 
