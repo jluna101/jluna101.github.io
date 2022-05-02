@@ -17,7 +17,7 @@ function Intro(props) {
                         </div>
                     </div>
                     <p className='i-desc'>
-                    An adaptable indivisual with three years of experience in a fast-paced logistics supervisory role and before that worked for four years performing instructional design for professors at CSULB. 
+                    An adaptable individual with three years of experience in a fast-paced logistics supervisory role and before that worked for four years performing instructional design for professors at CSULB. 
                     </p>
                 </div>
             </div>
