@@ -2,6 +2,7 @@ import React from 'react';
 import "./intro.css";
 
 function Intro(props) {
+    // Page title
     document.title = "Portfolio | Homepage"
     return (
         <div className='i'>
@@ -20,7 +21,6 @@ function Intro(props) {
                     </p>
                 </div>
             </div>
-
             <div className='i-right'>
                 <div className="i-bg"></div>
                 <div>

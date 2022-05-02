@@ -6,10 +6,11 @@ import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import { ThemeContext } from '../../context.js';
 
 function ProjectListDetails(props) {
+    // Page Title
     document.title = "Portfolio | Projects"
+    // Darkmode Theme
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
-    console.log(projects)
     return (
         <div className='pld-cont'>
             <div className='pld-texts'>
@@ -20,7 +21,7 @@ function ProjectListDetails(props) {
             </div>
             <div className="pl-list">
                     {projects.map((item) => (
-                        <div className='pld-cont-map' key={item.key}>
+                        <div className='pld-cont-map' key={item.title}>
                             <div>
                                 <h2 className='pld-title'>{item.title}</h2>
                             </div>

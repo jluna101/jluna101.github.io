@@ -4,7 +4,7 @@ export const projects = [
         title: 'urCrypto',
         img: "https://media.git.generalassemb.ly/user/41257/files/c61b9180-c486-11ec-9f7f-6a82738e9736",
         link: "https://urcrypto.netlify.app/",
-        desc: "urCrypto is a platform providing real time cryptocurrency financial data and trending business news. Indivisuals are prompted to signup and login to remove the 'paywall' and gain full functionality. Built with ReactJS, Bootstrap, and ChartJS on the frontend. Python and Django on the backend",
+        desc: "Platform providing real time cryptocurrency financial data & trending news. Visitors are prompted to signup/signin to remove the 'paywall' & gain full functionality. Built with ReactJS, Bootstrap, and ChartJS on the frontend. Python and Django on the backend",
         ghFront:'https://github.com/jluna101/ur-crypto-frontend',
         ghBack: 'https://github.com/jluna101/ur-crypto-backend',
     },
@@ -13,7 +13,7 @@ export const projects = [
         title: 'Pomodoro',
         img: "https://user-images.githubusercontent.com/97872070/165442451-f0a6de0b-2d85-47f1-af1e-c407a763dfa9.png",
         link: "https://pomodoro176.netlify.app/",
-        desc: 'This is a Pomodoro App that helps optimize study and break times through the use of Pomodoro intervals. This structured work and break timer helps indivisuals stay on task and increases productivity for longer periods. Pomodoro interval data is accessed in the frontend, and the data gets sent to the backend for statistics and analysis. Built using a MERN stack',
+        desc: 'This app helps optimize study & break times through the use of Pomodoro intervals. This structured work & break timer helps indivisuals stay on task & increases productivity for longer periods. Built using a MERN stack',
         ghFront: 'https://github.com/jluna101/Pomodoro-Frontend',
         ghBack: 'https://github.com/jluna101/Pomodoro-Backend',
 

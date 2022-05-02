@@ -10,6 +10,8 @@ import { ThemeContext } from './context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import ProjectListDetails from './components/projectListDetails/ProjectListDetails';
 import Skills from './components/skills/Skills';
+import Resume from './components/resume/Resume';
+
 
 
 function App() {
@@ -30,6 +32,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contacts/>}/>
         <Route path='/projects' element={<ProjectListDetails/>}/>
+        <Route path='/resume' element={<Resume/>}/>
       </Routes>
     </div>
   );

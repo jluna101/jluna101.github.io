@@ -2,6 +2,7 @@ import React from 'react';
 import './about.css';
 
 function About(props) {
+    // Page title
     document.title = "Portfolio | About"
     return (
         <div className='a'>
@@ -21,13 +22,6 @@ function About(props) {
                 <p className='a-desc'>
                     I'm also very passionate about financial literacy and teaching others. If you ever want to discuss/learn any topics from the latest cryptocurrency developments or real estate investing, lets connect!
                 </p>
-                {/* <div className='a-award'>
-                    <img  src='https://olc-wordpress-assets.s3.amazonaws.com/uploads/2021/04/OLC-Awards-Thumbnail-1200x800.jpg' alt="" className='a-award-img' />
-                    <div className="a-award-texts">
-                        <h4 href="" className="a-award-title"> Internation Award</h4>
-                        <div className='a-award-desc'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam molestias nemo, quod.</div>
-                    </div>
-                </div> */}
             </div>
         </div>
     );

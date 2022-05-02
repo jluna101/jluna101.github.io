@@ -1,0 +1,26 @@
+.r {
+    padding: 50px 100px 0px 100px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.r-img {
+    height: 110vh;
+}
+.r-texts {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 480px) {
+.r {
+    padding: 10px;
+}
+
+.r-texts {
+    width: 100%;
+}
+}
