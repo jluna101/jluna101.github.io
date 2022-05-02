@@ -8,7 +8,7 @@
 }
 
 .r-img {
-    height: 110vh;
+    height: 100vh;
 }
 .r-texts {
     margin: 0px;
@@ -20,7 +20,7 @@
     padding: 10px;
 }
 
-.r-texts {
-    width: 100%;
-}
+.r-img {
+    height: 90vh;
+    }
 }

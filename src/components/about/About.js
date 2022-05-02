@@ -17,10 +17,10 @@ function About(props) {
                 Little bit about me..
                 </h1>
                 <p className='a-sub'>
-                    Hi again, my name is Jesse Luna. When i'm not typing awaying behind a screen you'll find me indulging in some of my hobbies such as hiking, traveling, and playing with my two frenchies.
+                    Hi again, my name is Jesse Luna. When i'm not typing awaying behind a screen you'll find me hiking, traveling, or playing with my two frenchies.
                 </p>
                 <p className='a-desc'>
-                    I'm also very passionate about financial literacy and teaching others. If you ever want to discuss/learn any topics from the latest cryptocurrency developments or real estate investing, lets connect!
+                    I'm also passionate about financial literacy & teaching others. If you ever want to discuss/learn any topics from the latest cryptocurrency developments or real estate investing, reach out!
                 </p>
             </div>
         </div>

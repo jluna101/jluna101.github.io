@@ -42,6 +42,7 @@
 }
 .a-sub {
     margin: 20px 0px;
+    font-weight: 300;
 }
 .a-desc {
     font-weight: 300;
@@ -56,7 +57,7 @@
 .a-award-texts {
     width: 70%;
 }
-
+ 
 .a-award-title {
     font-weight: bold;
     color: darkgreen;
