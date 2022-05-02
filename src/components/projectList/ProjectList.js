@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '../project/Project';
 import './projectList.css'
 import { projects } from '../../data';
+import { Link } from 'react-router-dom';
 
 function ProjectList(props) {
     return (
@@ -9,7 +10,9 @@ function ProjectList(props) {
             <div className='pl-texts'>
                 <h1 className='pl-title'> Projects</h1>
                 <p className='pl-desc'>
-                    Take a glance at my projects. If you have any questions feel free to ask! 
+                    Below are a few projects completed this year. For details such as technologies used & documentation please visit my Project gallery&nbsp;
+                    <Link to='/projects'>here</Link>
+                    .
                 </p>
             </div>
             <div className="pl-list">

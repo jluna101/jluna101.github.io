@@ -2,7 +2,7 @@ import React from 'react';
 import './resume.css';
 
 function Resume(props) {
-
+    document.title = "Resume | Portfolio"
     return (
         <div className='r'>
             <h1 className='r-title'>Resume</h1>

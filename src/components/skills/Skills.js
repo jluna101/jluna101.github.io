@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../context.js';
 import './skills.css';
 
 function Skills(props) {
+    // Darkmode theme
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
     return (
-        <div className='s'>
+        <div className='s' style={{backgroundColor: darkMode && 'beige', color: darkMode && '#222'}}>
             <div className='s-texts'>
                 <h1 className='s-title'>Technologies</h1>
                 <p className='s-p'>

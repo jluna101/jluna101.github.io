@@ -19,13 +19,13 @@ function Navbar(props) {
             <div className='n-wrapper' style={{backgroundColor: theme.state.darkMode? '#222': 'white'}}>
                     <section className='n-section-left'>
                         <Link className='n-link' to='/' style={{color: theme.state.darkMode? 'white': 'black'}}>
-                            <h3>Jesse Luna</h3>
+                            <h3>JESSE LUNA</h3>
                         </Link>
                     </section>
                     <section className='n-section-right'>
                         <Link className='n-link' style={{color: darkMode && "white"}} to='/contact'><p>Contact</p></Link>
                         <Link className='n-link' style={{color: darkMode && "white"}} to='/projects'><p>Projects</p></Link>
-                        <Link className='n-link' style={{color: darkMode && "white"}} to='/resume'><p>CV</p></Link>
+                        <Link className='n-link' style={{color: darkMode && "white"}} to='/resume'><p>Resume</p></Link>
                         <Link className='n-link' style={{color: darkMode && "white"}} to='/about'><p>About</p></Link>
                     </section>
             </div>

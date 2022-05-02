@@ -3,12 +3,12 @@ import "./intro.css";
 
 function Intro(props) {
     // Page title
-    document.title = "Portfolio | Homepage"
+    document.title = "Welcome to Jesse's Portfolio"
     return (
         <div className='i'>
             <div className='i-left'>
                 <div className='i-left-wrapper'>
-                    <h2 className='i-intro'>Welcome! My name is</h2>
+                    <h2 className='i-intro'>Welcome to My Portfolio</h2>
                     <h1 className='i-name'> Jesse</h1>
                     <div className='i-title'>
                         <div className='i-title-wrapper'>
@@ -29,6 +29,6 @@ function Intro(props) {
             </div>
         </div>
     );
-}
+} 
 
 export default Intro;

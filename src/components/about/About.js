@@ -3,7 +3,7 @@ import './about.css';
 
 function About(props) {
     // Page title
-    document.title = "Portfolio | About"
+    document.title = "About Me | Portfolio"
     return (
         <div className='a'>
             <div className='a-left'>

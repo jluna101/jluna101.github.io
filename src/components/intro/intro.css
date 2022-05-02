@@ -24,9 +24,11 @@
 .i-intro{
     font-size: 30px;
     font-weight: 300;
+
 }
 .i-name {
     font-size: 60px;
+    margin-top: 0px;
 }
 .i-title {
     height: 50px;
@@ -54,16 +56,8 @@
     height: 50px;
     font-size: 30px;
     font-weight: bold;
-    /* color: burlywood; */
-    /* background-color: white; */
     display: flex;
     align-items: center;
-}
-.i-scroll {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 20px;
 }
 .i-img{
     width: 100%;

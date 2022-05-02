@@ -4,7 +4,7 @@ import { projects } from '../../data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import { ThemeContext } from '../../context.js';
-
+ 
 function ProjectListDetails(props) {
     // Page Title
     document.title = "Portfolio | Projects"
