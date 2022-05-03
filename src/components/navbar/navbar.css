@@ -38,7 +38,6 @@
     flex: .3;
     flex-direction: row;
     font-weight: 500;
-
 }
 .n-section-right {
     display: flex;
@@ -47,6 +46,10 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     right: 100px;
+}
+.n-link:hover{
+    color: beige;
+    font-weight: 800;
 }
 
 .n-wrapper {
@@ -59,6 +62,10 @@
     text-decoration: none;
     color: inherit;
 }
+/* .n-icon {
+    padding: 15px 0px 15px 0px;
+    margin: 0px;
+} */
 
 @media screen and (max-width: 480px) {
     .n-section-left {

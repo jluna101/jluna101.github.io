@@ -4,6 +4,7 @@ import { projects } from '../../data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import { ThemeContext } from '../../context.js';
+import { Link } from 'react-router-dom';
  
 function ProjectListDetails(props) {
     // Page Title
@@ -22,12 +23,15 @@ function ProjectListDetails(props) {
             <div className='pld-texts'>
                 <h1 className='pldd-title'> Projects</h1>
                 <p className='pldd-desc'>
-                    Below are all the projects i've completed 2022 thus far. If you have any questions, feel free to ask!
+                    Below are all the projects i've completed 2022 thus far. If you have any questions, feel free to&nbsp;
+                    <Link to='/contact'>contact</Link>
+                    &nbsp;me.
                 </p>
             </div>
             <div className="pl-list">
                     {projects.map((item) => (
                         <div className='pld-cont-map' key={item.title}>
+                            <a href={item.link} className='link' target="_blank" rel="noreferrer">
                             <div>
                                 <h2 className='pld-title'>{item.title}</h2>
                             </div>
@@ -37,10 +41,11 @@ function ProjectListDetails(props) {
                                     <div className="p-circle"></div>
                                     <div className="p-circle"></div>
                                 </div>
-                                    <a href={item.link} target="_blank" rel="noreferrer">
+                                    
                                         <img src={item.img} alt={item.title} className='pld-img' />
-                                    </a>
+                                    
                                 </div>
+                                </a>
                             <div className='pld-desc' >
                                 <p className='pld-tag'>
                                     <br/>

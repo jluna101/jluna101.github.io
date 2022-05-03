@@ -24,7 +24,6 @@
 .i-intro{
     font-size: 30px;
     font-weight: 300;
-
 }
 .i-name {
     font-size: 60px;
@@ -36,16 +35,16 @@
 }
 .i-title-wrapper {
     height: 100%;
-    width: 230px;
+    width: 270px;
     animation: move 10s ease-in-out infinite alternate;
 }
 @keyframes move {
     25%{
         transform: translateY(-50px);
     }
-    /* 50%{
+    50%{
         transform: translateY(-100px);
-    }  */
+    } 
     /* 75%{
         transform: translateY(-150px);
     } 
@@ -55,7 +54,7 @@
 }
 .i-title-item {
     height: 50px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -82,7 +81,6 @@
     margin-top: 40px;
     }
     .i-left-wrapper {
-    
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -92,5 +90,12 @@
     .i-desc{
     display: none;
     }
-    
+    .i-title-item {
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

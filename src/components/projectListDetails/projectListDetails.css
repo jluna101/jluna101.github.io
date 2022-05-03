@@ -62,7 +62,7 @@ margin-bottom: 0px;
 }
 .gh-tag {
     margin: 0px;
-
+    padding: 5px 0px 5px 0px;
 }
 .pld-btn {
     color: inherit;
@@ -86,10 +86,14 @@ margin-bottom: 0px;
 .link {
     text-decoration: none;
     color: inherit;
+    padding: 5px;
 }
 @media screen and (max-width: 480px) {
     .p {
     width: 40%;
     height: 15vh;
+    }
+    .pld-desc {
+        width: 80%;
     }
 }

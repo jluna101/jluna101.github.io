@@ -17,11 +17,11 @@ function Footer(props) {
                 © 2022 Jesse Luna 
             </div>
             <div className='f-icons'>Contact Me: 
-            &nbsp;
+            &nbsp; &nbsp;
             <a href="http://Linkedin.com/in/jesse-fernando-luna/" target="_blank" rel="noreferrer" className='link' style={{color: darkMode && "black"}}><FontAwesomeIcon icon={faLinkedin}/></a>
-            &nbsp;
+            &nbsp; &nbsp;
             <a href="https://github.com/jluna101" target="_blank" rel="noreferrer" className='link' style={{color: darkMode && "black"}}><FontAwesomeIcon icon={faGithub}/></a>
-            &nbsp;
+            &nbsp; &nbsp;
             <a className='link' href="mailto:jfluna1996@gmail.com" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
             </div>
         </div>

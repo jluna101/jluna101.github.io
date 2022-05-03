@@ -10,7 +10,7 @@ function ProjectList(props) {
             <div className='pl-texts'>
                 <h1 className='pl-title'> Projects</h1>
                 <p className='pl-desc'>
-                    Below are a few projects completed this year. For details such as technologies used & documentation please visit my Project gallery&nbsp;
+                    For details such as technologies used & documentation visit my Project gallery&nbsp;
                     <Link to='/projects'>here</Link>
                     .
                 </p>
