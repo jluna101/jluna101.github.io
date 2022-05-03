@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../context.js';
 import "./intro.css";
 
 function Intro(props) {
     // Page title
     document.title = "Welcome to Jesse's Portfolio"
+    // Darkmode theme
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
     return (
         <div className='i'>
             <div className='i-left'>
@@ -23,7 +27,7 @@ function Intro(props) {
                 </div>
             </div>
             <div className='i-right'>
-                <div className="i-bg"></div>
+                <div className="i-bg" style={{backgroundColor: darkMode &&'beige'}}></div>
                 <div>
                 <img src='https://user-images.githubusercontent.com/97872070/166394507-e35883ad-48aa-4dab-a7bf-eeaae95e1fcf.png' alt="Jesse Luna" className='i-img'/>
                 </div>

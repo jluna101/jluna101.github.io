@@ -47,10 +47,10 @@
     justify-content: space-evenly;
     right: 100px;
 }
-.n-link:hover{
+/* .n-link:hover{
     color: beige;
     font-weight: 1000;
-}
+} */
 
 .n-wrapper {
     padding: 0px 80px 0px 50px;

@@ -24,7 +24,7 @@ function ProjectListDetails(props) {
                 <h1 className='pldd-title'> Projects</h1>
                 <p className='pldd-desc'>
                     Below are all the projects i've completed 2022 thus far. If you have any questions, feel free to&nbsp;
-                    <Link to='/contact'>contact</Link>
+                    <Link to='/contact' style={{color: darkMode && "white"}}>contact</Link>
                     &nbsp;me.
                 </p>
             </div>
@@ -33,7 +33,7 @@ function ProjectListDetails(props) {
                         <div className='pld-cont-map' key={item.title}>
                             <a href={item.link} className='link' target="_blank" rel="noreferrer">
                             <div>
-                                <h2 className='pld-title'>{item.title}</h2>
+                                <h2 className='pld-title' style={{color: darkMode && "white"}}>{item.title}</h2>
                             </div>
                             <div className='pld'>
                                 <div className="p-browser">
@@ -41,9 +41,7 @@ function ProjectListDetails(props) {
                                     <div className="p-circle"></div>
                                     <div className="p-circle"></div>
                                 </div>
-                                    
-                                        <img src={item.img} alt={item.title} className='pld-img' />
-                                    
+                                        <img src={item.img} alt={item.title} className='pld-img'/>
                                 </div>
                                 </a>
                             <div className='pld-desc' >
@@ -51,7 +49,7 @@ function ProjectListDetails(props) {
                                     <br/>
                                     {readMore == false? item.shortDesc
                                     
-                                    : item.desc} &nbsp;<button onClick={handleClick} className='pld-btn'>{readMore == false? 'Read More': 'Read Less'}</button>
+                                    : item.desc} &nbsp;<button onClick={handleClick} className='pld-btn' style={{color: darkMode && "white", backgroundColor: darkMode && "#222"}}>{readMore == false? 'Read More': 'Read Less'}</button>
                                     </p>
                                 <p className='gh-tag'>
                                     <a href={item.ghFront} target="_blank" rel="noreferrer" className='link' style={{color: darkMode && "white"}}><FontAwesomeIcon className='p-icon' icon={faGithub}/> Frontend</a>
