@@ -64,7 +64,11 @@ margin-bottom: 0px;
     margin: 0px;
 
 }
-
+.pld-btn {
+    color: inherit;
+    background-color: white;
+    padding: 0px;
+}
 .p-circle {
     width: 6px;
     height: 6px;

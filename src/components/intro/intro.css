@@ -36,6 +36,7 @@
 }
 .i-title-wrapper {
     height: 100%;
+    width: 230px;
     animation: move 10s ease-in-out infinite alternate;
 }
 @keyframes move {
@@ -44,8 +45,8 @@
     }
     /* 50%{
         transform: translateY(-100px);
-    } 
-    75%{
+    }  */
+    /* 75%{
         transform: translateY(-150px);
     } 
     100%{

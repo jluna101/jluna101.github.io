@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './projectListDetails.css';
 import { projects } from '../../data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,10 +7,16 @@ import { ThemeContext } from '../../context.js';
  
 function ProjectListDetails(props) {
     // Page Title
-    document.title = "Portfolio | Projects"
+    document.title = "Projects | Portfolio"
     // Darkmode Theme
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
+    // Read More State
+    const [readMore, setReadMore] = useState(false)
+    const handleClick = (event) => {
+        event.preventDefault();
+        setReadMore(!readMore)
+    }
     return (
         <div className='pld-cont'>
             <div className='pld-texts'>
@@ -38,7 +44,9 @@ function ProjectListDetails(props) {
                             <div className='pld-desc' >
                                 <p className='pld-tag'>
                                     <br/>
-                                    {item.desc}
+                                    {readMore == false? item.shortDesc
+                                    
+                                    : item.desc} &nbsp;<button onClick={handleClick} className='pld-btn'>{readMore == false? 'Read More': 'Read Less'}</button>
                                     </p>
                                 <p className='gh-tag'>
                                     <a href={item.ghFront} target="_blank" rel="noreferrer" className='link' style={{color: darkMode && "white"}}><FontAwesomeIcon className='p-icon' icon={faGithub}/> Frontend</a>

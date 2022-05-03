@@ -16,7 +16,7 @@ function Skills(props) {
                 <div className='s-desc'>
                     <li>HTML/CSS</li>
                     <li>Bootstrap v5</li>
-                    <li>JavaScript (Node.js/ReactJS/jQuery)</li>
+                    <li>JavaScript (Node.js, ReactJS, jQuery)</li>
                     <li>MongoDB</li>
                     <li>Express</li>
                 </div>

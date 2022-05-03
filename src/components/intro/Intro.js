@@ -24,7 +24,7 @@ function Intro(props) {
             <div className='i-right'>
                 <div className="i-bg"></div>
                 <div>
-                <img src='https://user-images.githubusercontent.com/97872070/165859266-da22866e-3c32-4933-a178-bbfee82f14c0.png' alt="Jesse Luna" className='i-img'/>
+                <img src='https://user-images.githubusercontent.com/97872070/166394507-e35883ad-48aa-4dab-a7bf-eeaae95e1fcf.png' alt="Jesse Luna" className='i-img'/>
                 </div>
             </div>
         </div>

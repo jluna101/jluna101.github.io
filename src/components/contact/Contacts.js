@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Contacts(props) {
     // Page Title 
-    document.title = "Portfolio | Contact"
+    document.title = "Contact Me | Portfolio"
     const formRef = useRef()
     const [done, setDone] = useState(false)
     // Submit Email Form

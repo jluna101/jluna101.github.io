@@ -35,7 +35,7 @@
 }
 .n-section-left {
     display: flex;
-    flex: 1;
+    flex: .3;
     flex-direction: row;
     font-weight: 500;
 
@@ -45,7 +45,7 @@
     flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     right: 100px;
 }
 
