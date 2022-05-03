@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectListDetails from './components/projectListDetails/ProjectListDetails';
 import Skills from './components/skills/Skills';
 import Resume from './components/resume/Resume';
+import Footer from './components/footer/Footer';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='/projects' element={<ProjectListDetails/>}/>
         <Route path='/resume' element={<Resume/>}/>
       </Routes>
+      <Footer />
     </div>
   );
 }

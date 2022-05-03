@@ -1,0 +1,20 @@
+.f {
+    display: flex;
+    background-color: #222;
+    min-height: 100px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: 800;
+}
+.f-space{
+    flex: 1;
+}
+.f-texts {
+    flex: 1;
+}
+.f-icons {
+    flex: 1;
+}
