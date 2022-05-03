@@ -42,9 +42,9 @@ function Navbar(props) {
                             <Link className='n-link' style={{color: darkMode && "black"}} to='/about'><p className='n-p'>About</p></Link>
                         </div>
                 </div> */}
-            <div className='t' style={{backgroundColor: theme.state.darkMode? 'white': 'black'}} > 
-                <FontAwesomeIcon className= 't-icon moon' icon={faMoon}/>
-                <FontAwesomeIcon className='t-icon sun' icon={faSun} style={{color: theme.state.darkMode? '#f8d568 ': 'white'}}/>
+            <div className='t' style={{backgroundColor: theme.state.darkMode? 'white': 'beige', border: '1px solid black'}} > 
+                {/* <FontAwesomeIcon className= 't-icon moon' icon={faMoon}/>
+                <FontAwesomeIcon className='t-icon sun' icon={faSun} style={{color: theme.state.darkMode? '#f8d568 ': 'white'}}/> */}
                 <div className="t-button" onClick={handleClick} style={{left: theme.state.darkMode? 0:25}}></div>
             </div>
         </div>
