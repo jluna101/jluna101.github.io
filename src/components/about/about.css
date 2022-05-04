@@ -54,15 +54,6 @@
     align-items: center;
     justify-content: space-between;
 }
-.a-award-texts {
-    width: 70%;
-}
-
-.a-award-title {
-    font-weight: bold;
-    color: darkgreen;
-    margin-bottom: 10px;
-}
 
 @media screen and (max-width:480px) {
     .a{
@@ -77,6 +68,7 @@
 
     .a-card {
     height: 30vh;
+    position: relative;
     }
 
     .a-card.bg, .a-award {
@@ -86,4 +78,5 @@
     .a-right{
     padding: 20px;
     }
+
 }

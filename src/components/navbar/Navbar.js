@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../context.js';
 import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faMoon, faSun} from '@fortawesome/free-solid-svg-icons';
+import {faMoon, faSun, faBars} from '@fortawesome/free-solid-svg-icons';
 import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 
@@ -13,6 +13,29 @@ function Navbar(props) {
     const darkMode = theme.state.darkMode;
     const handleClick = () => {
         theme.dispatch({type:"TOGGLE"})
+    }
+    const sidebarData = [
+        {
+            title: 'Contact',
+            link: '/contact',
+        },
+        {
+            title: 'Projects',
+            link: '/projects',
+        },
+        {
+            title: 'Resume',
+            link: '/resume',
+        },
+        {
+            title: 'About',
+            link: '/about',
+        },
+    ]
+    const [nav, setNav] = useState(false);
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setNav(!nav); 
     }
     return (
         <div>
@@ -27,28 +50,38 @@ function Navbar(props) {
                         <Link className='n-link' style={{color: darkMode && "black"}} to='/projects'><p>Projects</p></Link>
                         <Link className='n-link' style={{color: darkMode && "black"}} to='/resume'><p>Resume</p></Link>
                         <Link className='n-link' style={{color: darkMode && "black"}} to='/about'><p>About</p></Link>
-                        {/* <div className='n-icon'>
-                        <a href="https://github.com/jluna101" target="_blank" rel="noreferrer" style={{color: darkMode && "black"}}><FontAwesomeIcon icon={faGithub}/></a>&nbsp; &nbsp;
-                        <a href="http://Linkedin.com/in/jesse-fernando-luna/" target="_blank" rel="noreferrer" style={{color: darkMode && "black"}}><FontAwesomeIcon icon={faLinkedin}/></a>
-                        </div> */}
                     </section>
+                    <button className='n-btn' onClick={handleSubmit}>
+                        <FontAwesomeIcon icon={faBars}/>
+                    </button>
                     
             </div>
-                {/* <div className='n-section-right-m'>
-                        <div className='n-section-right-mobile'>
-                            <Link className='n-link' style={{color: darkMode && "black"}} to='/contact'><p className='n-p'>Contact</p></Link>
-                            <Link className='n-link' style={{color: darkMode && "black"}} to='/projects'><p className='n-p'>Projects</p></Link>
-                            <Link className='n-link' style={{color: darkMode && "black"}} to='/resume'><p className='n-p'>Resume</p></Link>
-                            <Link className='n-link' style={{color: darkMode && "black"}} to='/about'><p className='n-p'>About</p></Link>
-                        </div>
-                </div> */}
+                {nav == true? 
+                <div className='sidebar'>
+                    <ul onClick={handleSubmit} className='sidebarList'>
+                        {sidebarData.map((item, key) => {
+                            return( 
+                            <Link to={item.link} className='link'>
+                                <li 
+                                className='row' 
+                                key={item.title}
+                                id={window.location.pathname == item.link? "active":""}
+                                >
+                                    <div >{item.title}</div>
+                                </li>
+                            </Link>);
+                        })}
+                    </ul>
+                </div>
+                : <></>}
+
             <div className='t' style={{backgroundColor: theme.state.darkMode? 'white': 'beige', border: '1px solid black'}} > 
-                {/* <FontAwesomeIcon className= 't-icon moon' icon={faMoon}/>
-                <FontAwesomeIcon className='t-icon sun' icon={faSun} style={{color: theme.state.darkMode? '#f8d568 ': 'white'}}/> */}
                 <div className="t-button" onClick={handleClick} style={{left: theme.state.darkMode? 0:25}}></div>
             </div>
+            
         </div>
     );
 }
 
 export default Navbar;
+

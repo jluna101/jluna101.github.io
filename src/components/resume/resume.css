@@ -15,8 +15,9 @@
     padding: 0px;
 }
 .r-btn {
-    margin: 0px 0px 20px 0px;
-    height: 7vh;
+    margin: 0px 0px 10px 0px;
+    padding: 7px;
+    height: 3vh;
 }
 @media screen and (max-width: 480px) {
 .r {
