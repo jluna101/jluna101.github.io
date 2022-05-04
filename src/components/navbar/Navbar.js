@@ -37,12 +37,16 @@ function Navbar(props) {
         e.preventDefault()
         setNav(!nav); 
     }
+    const removeNavHome = (e) => {
+        e.preventDefault()
+        setNav(false)
+    }
     return (
         <div>
             <div className='n-wrapper' style={{backgroundColor: theme.state.darkMode &&'beige'}}>
-                    <section className='n-section-left' >
+                    <section className='n-section-left' onClick={removeNavHome} >
                         <Link className='n-link' to='/' style={{color: theme.state.darkMode &&'black'}}>
-                            <h3 className='n-link'>JESSE LUNA</h3>
+                            <h3 className='n-link' >JESSE LUNA</h3>
                         </Link>
                     </section>
                     <section className='n-section-right'>
