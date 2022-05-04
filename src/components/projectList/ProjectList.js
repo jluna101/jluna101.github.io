@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Project from '../project/Project';
 import './projectList.css'
 import { projects } from '../../data';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../../context.js';
 
 function ProjectList(props) {
+    // Darkmode theme
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
     return (
         <div className='pl'>
             <div className='pl-texts'>
                 <h1 className='pl-title'> Projects</h1>
                 <p className='pl-desc'>
                     For details such as technologies used & documentation visit my Project gallery&nbsp;
-                    <Link to='/projects'>here</Link>
+                    <Link to='/projects' className='' style={{color: darkMode? "white": "black"}}>here</Link>
                     .
                 </p>
             </div>

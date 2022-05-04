@@ -11,7 +11,7 @@ function Project({ img, link, desc, title }) {
     return (
         <div>
             <a href={link} className='link p-cont' target="_blank" rel="noreferrer">
-            <h4 className='p-desc' style={{color: darkMode && "white"}}>{title}</h4>
+            <h4 className='p-desc' style={{color: darkMode && "white"}} >{title}</h4>
             <div className='p'>
                 <div className="p-browser">
                     <div className="p-circle"></div>

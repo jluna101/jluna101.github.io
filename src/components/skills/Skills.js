@@ -11,7 +11,7 @@ function Skills(props) {
             <div className='s-texts'>
                 <h1 className='s-title'>Technologies</h1>
                 <p className='s-p'>
-                    Below are a few of tecnologies I have experience with.
+                    Below are a few of technologies I have experience with.
                 </p>
                 <div className='s-desc'>
                     <li>HTML/CSS</li>

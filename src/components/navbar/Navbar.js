@@ -43,10 +43,10 @@ function Navbar(props) {
     }
     return (
         <div>
-            <div className='n-wrapper' style={{backgroundColor: theme.state.darkMode &&'beige'}}>
+            <div className='n-wrapper' style={{backgroundColor: darkMode &&'beige'}}>
                     <section className='n-section-left' onClick={removeNavHome} >
-                        <Link className='n-link' to='/' style={{color: theme.state.darkMode &&'black'}}>
-                            <h3 className='n-link' >JESSE LUNA</h3>
+                        <Link className='n-link' to='/' style={{color: darkMode &&'black'}}>
+                            <h3 className='n-link' style={{color: darkMode? 'black': 'white'}}>JESSE LUNA</h3>
                         </Link>
                     </section>
                     <section className='n-section-right'>

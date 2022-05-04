@@ -21,10 +21,10 @@ function ProjectListDetails(props) {
     return (
         <div className='pld-cont'>
             <div className='pld-texts'>
-                <h1 className='pldd-title'> Projects</h1>
+                <h1 className='pldd-title' > Projects</h1>
                 <p className='pldd-desc'>
                     Below are all the projects i've completed 2022 thus far. If you have any questions, feel free to&nbsp;
-                    <Link to='/contact' style={{color: darkMode && "white"}}>contact</Link>
+                    <Link to='/contact' style={{color: darkMode? "white" : "black"}}>contact</Link>
                     &nbsp;me.
                 </p>
             </div>

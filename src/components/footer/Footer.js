@@ -10,19 +10,26 @@ function Footer(props) {
     const theme = useContext(ThemeContext)
     const darkMode = theme.state.darkMode;
     return (
-        <div className='f' style={{ backgroundColor: darkMode && 'beige',
-        color: darkMode && "black",}}>
-            <div className='f-space'></div>
-            <div className='f-texts'>
-                © 2022 Jesse Luna 
+        <div className='f-cont'>
+            <div className='f' style={{ backgroundColor: darkMode && 'beige',
+            color: darkMode && "black",}}>
+                <div className='f-space'></div>
+                
+                <div className='f-texts'>Contact&nbsp;| </div>
+                <div>
+                    <a href="http://Linkedin.com/in/jesse-fernando-luna/" target="_blank" rel="noreferrer" className='link f-icons' style={{color: darkMode && "black"}}>Linkedin <FontAwesomeIcon icon={faLinkedin}/></a>
+                </div>
+                <div>
+                    <a href="https://github.com/jluna101" target="_blank" rel="noreferrer" className='link f-icons' style={{color: darkMode && "black"}}>Github <FontAwesomeIcon icon={faGithub}/></a>
+                </div>
+                <div>
+                    <a className='link f-icons' href="mailto:jfluna1996@gmail.com" target="_blank">Email <FontAwesomeIcon icon={faEnvelope}/></a>
+                </div>
+
+                
             </div>
-            <div className='f-icons'>Contact Me: 
-            &nbsp; &nbsp;
-            <a href="http://Linkedin.com/in/jesse-fernando-luna/" target="_blank" rel="noreferrer" className='link' style={{color: darkMode && "black"}}><FontAwesomeIcon icon={faLinkedin}/></a>
-            &nbsp; &nbsp;
-            <a href="https://github.com/jluna101" target="_blank" rel="noreferrer" className='link' style={{color: darkMode && "black"}}><FontAwesomeIcon icon={faGithub}/></a>
-            &nbsp; &nbsp;
-            <a className='link' href="mailto:jfluna1996@gmail.com" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
+            <div className='f-copyright'>
+                    © 2022 Jesse Luna 
             </div>
         </div>
     );
