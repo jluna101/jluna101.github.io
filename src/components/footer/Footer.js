@@ -10,9 +10,9 @@ function Footer(props) {
     const theme = useContext(ThemeContext)
     const darkMode = theme.state.darkMode;
     return (
-        <div className='f-cont'>
-            <div className='f' style={{ backgroundColor: darkMode && 'beige',
-            color: darkMode && "black",}}>
+        <div className='f-cont' style={{ backgroundColor: darkMode && 'beige',
+            color: darkMode && "black"}}>
+            <div className='f' >
                 <div className='f-space'></div>
                 
                 <div className='f-texts'>Contact&nbsp;| </div>

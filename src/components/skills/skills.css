@@ -1,27 +1,41 @@
 .s {
-    padding: 50px 100px;
+    padding: 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: #222;
     color: white;
+    width: 100%;
 }
 .s-texts {
     width: 65%;
 }
 .s-title {
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 300;
     margin: 20px auto;
+    margin-top: 40px;
 }
 .s-p {
     margin-bottom: 30px;
 }
-.s-desc {
-    columns: 200px 3;
+.s-cont {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    margin-bottom: 40px;
 }
+
+.s-desc {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px ;
+}
+
 .s-list {
     width: 100%;
     display: flex;
@@ -31,7 +45,7 @@
 
 @media screen and (max-width: 480px) {
     .s {
-    padding: 10px;
+    padding: 10px auto;
 }
 
 .s-texts {

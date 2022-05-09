@@ -12,7 +12,7 @@ function ProjectList(props) {
     return (
         <div className='pl'>
             <div className='pl-texts'>
-                <h1 className='pl-title'> Projects</h1>
+                <h2 className='pl-title'> Projects</h2>
                 <p className='pl-desc'>
                     For details such as technologies used & documentation visit my Project gallery&nbsp;
                     <Link to='/projects' className='' style={{color: darkMode? "white": "black"}}>here</Link>
