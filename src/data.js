@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         title: 'urCrypto',
-        img: "https://media.git.generalassemb.ly/user/41257/files/c61b9180-c486-11ec-9f7f-6a82738e9736",
+        img: "https://user-images.githubusercontent.com/97872070/167524507-7d613692-9566-4671-80fc-702dfe9ac7a5.png",
         link: "https://urcrypto.netlify.app/",
         desc: "Platform providing real time cryptocurrency financial data & trending news. This also features a 'paywall' which prompts users to signup/signin to gain full functionality. Built with ReactJS, Bootstrap, and ChartJS on the frontend. Python and Django on the backend",
         shortDesc: "Platform providing real time cryptocurrency financial data & trending news.",
@@ -12,8 +12,8 @@ export const projects = [
     {
         id: 2,
         title: 'Pomodoro',
-        img: "https://user-images.githubusercontent.com/97872070/165442451-f0a6de0b-2d85-47f1-af1e-c407a763dfa9.png",
-        link: "https://pomodoro176.netlify.app/",
+        img: "https://user-images.githubusercontent.com/97872070/167546942-e7c4cf3b-2a61-434c-934b-cfa9f27cedf1.png",
+        link: 'pom176.netlify.app',
         desc: 'This app helps optimize study & break times through the use of Pomodoro intervals. This structured work & break timer helps indivisuals stay on task & increases productivity for longer periods. Built using a MERN stack',
         shortDesc: "This app helps optimize study & break times through the use of Pomodoro intervals.",
         ghFront: 'https://github.com/jluna101/Pomodoro-Frontend',
@@ -25,7 +25,7 @@ export const projects = [
     {
         id: 3,
         title: 'Blockchain Buzz',
-        img: "https://media.git.generalassemb.ly/user/41257/files/d7649e00-c486-11ec-8d22-04498d5c658c",
+        img: "https://user-images.githubusercontent.com/97872070/167499942-b9b3e64b-4794-4e0d-9191-5cd6e42dfc28.png",
         link: "https://blockchain-buzz.netlify.app/",
         desc: 'Blockchain Buzz is a hub for cryptocurrency financial metrics and trending cryptocurrency news. Built using ReactJS, HTML, and CSS.',
         shortDesc: 'Blockchain Buzz is a hub for cryptocurrency financial metrics and trending cryptocurrency news.',
