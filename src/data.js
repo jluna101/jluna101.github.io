@@ -25,7 +25,7 @@ export const projects = [
     {
         id: 3,
         title: 'Blockchain Buzz',
-        img: "https://user-images.githubusercontent.com/97872070/167499942-b9b3e64b-4794-4e0d-9191-5cd6e42dfc28.png",
+        img: "https://user-images.githubusercontent.com/97872070/167700370-bb710464-d705-4bf8-b639-11a1ef4b8bc5.png",
         link: "https://blockchain-buzz.netlify.app/",
         desc: 'Blockchain Buzz is a hub for cryptocurrency financial metrics and trending cryptocurrency news. Built using ReactJS, HTML, and CSS.',
         shortDesc: 'Blockchain Buzz is a hub for cryptocurrency financial metrics and trending cryptocurrency news.',

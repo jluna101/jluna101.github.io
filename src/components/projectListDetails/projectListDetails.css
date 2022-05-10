@@ -11,7 +11,6 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    text-align: center
 }
 .pld-texts{
     display: flex;
@@ -29,9 +28,11 @@
     width: 40%;
 }
 .pld {
-    width: 250px;
-    height: 15vh;
-    margin: 20px 10px 0px 10px;
+    /* width: 250px; */
+    width: 50%;
+    height: auto;
+    /* margin: 20px 10px 0px 10px; */
+    margin: 20px auto 0px auto;
     border: 2px solid rgb(243, 242, 242);
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
@@ -45,10 +46,11 @@
     position: sticky;
 }
 .pld-title {
-width: 250px;
+width:100%;
 text-align:justify;
 overflow: hidden;
 margin-bottom: 0px;
+text-align: center;
 } 
 .pld-desc {
     display: flex;
@@ -77,11 +79,11 @@ margin-bottom: 0px;
 }
 .pld-img {
     width: 100%;
-    transition: all 10s ease;
+    /* transition: all 10s ease; */
 }
-.pld:hover .pld-img{
+/* .pld:hover .pld-img{
     transform: translateY(-100%);
-}
+} */
 .link {
     text-decoration: none;
     color: inherit;
