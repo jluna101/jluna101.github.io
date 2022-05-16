@@ -13,7 +13,7 @@ export const projects = [
         id: 2,
         title: 'Pomodoro',
         img: "https://user-images.githubusercontent.com/97872070/167546942-e7c4cf3b-2a61-434c-934b-cfa9f27cedf1.png",
-        link: 'pom176.netlify.app',
+        link: 'https://pom176.netlify.app/',
         desc: 'This app helps optimize study & break times through the use of Pomodoro intervals. This structured work & break timer helps indivisuals stay on task & increases productivity for longer periods. Built using a MERN stack',
         shortDesc: "This app helps optimize study & break times through the use of Pomodoro intervals.",
         ghFront: 'https://github.com/jluna101/Pomodoro-Frontend',
