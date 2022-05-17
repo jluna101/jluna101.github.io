@@ -21,7 +21,7 @@ function ProjectList(props) {
             </div>
             <div className="pl-list">
                 {projects.map((item) => (
-                    <Project key={item.id} img={item.img} link={item.link} desc={item.desc} title={item.title}/>
+                    <Project key={item.id} img={item.img} link={item.link} desc={item.desc} title={item.title} ghFront={item.ghFront} ghBack={item.ghBack}  />
                 ))}
             </div>
         </div>

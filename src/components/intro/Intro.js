@@ -21,7 +21,7 @@ function Intro(props) {
                         </div>
                     </div>
                     <p className='i-desc'>
-                    An adaptable individual with three years of experience in a fast-paced logistics supervisory role and before that worked for four years performing instructional design for professors at CSULB. 
+                    I’m a fullstack developer with a passion for building functional software. During college, I worked as an instructional design assistant for the school, considering the user-experience for every course I created. After graduation, I worked for three years supervising a team of 20+ staff and managing all operations for a large-scale warehouse. In that role, I helped implement a new warehouse management system, which involved partnering with software engineers, selecting the best system,  and then training staff on the software. This exposure to tech was what inspired me to get into software development.
                     </p>
                 </div>
             </div>
