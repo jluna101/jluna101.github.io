@@ -14,10 +14,10 @@ function Resume(props) {
             <h1 className='r-title'>Resume</h1>
 
             <p className='r-texts'>
-                <a href="https://git.generalassemb.ly/SEI-124/Unit-Two-Notes/files/4010/JesseLuna-Resume.pdf"><button className='r-btn'><FontAwesomeIcon icon={faDownload}/></button></a>
+                <a href="https://github.com/jluna101/jluna101/files/8704265/Jesses.Resume.pdf"><button className='r-btn'><FontAwesomeIcon icon={faDownload}/></button></a>
             </p>
             <div>
-                <img className='r-img' src="https://media.git.generalassemb.ly/user/41257/files/9e121500-cd47-11ec-9274-2aed275be379" alt="" />
+                <img className='r-img' src="https://user-images.githubusercontent.com/97872070/168705417-f8309bba-9e43-4854-8919-476667950464.png" alt="" />
             </div>
         </div>
     );
