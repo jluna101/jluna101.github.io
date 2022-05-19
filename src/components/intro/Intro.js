@@ -17,7 +17,7 @@ function Intro(props) {
                     <div className='i-title'>
                         <div className='i-title-wrapper'>
                             <div className='i-title-item'>Software Developer</div>
-                            <div className='i-title-item'>UI/UX Designer</div>
+                            <div className='i-title-item'>Full-Stack Developer</div>
                         </div>
                     </div>
                     <p className='i-desc'>
